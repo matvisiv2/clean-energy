@@ -1,2 +1,4 @@
 # clean-energy
-Academy for Heroes. Solo project "Clean Energe"
+Academy for Heroes.
+Project: "Clean Energy".
+Performer: Roman Matvisiv.
