@@ -1,0 +1,77 @@
+/* #region HEADER */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  font-family        : "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight        : 600;
+  font-style         : normal;
+}
+
+.header {
+  position  : absolute;
+  top       : 0;
+  left      : 0;
+  height    : 90px;
+  width     : 100%;
+  background: rgba(0, 0, 0, 0.3);
+
+  display              : grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap                  : 0;
+  justify-items        : center;
+  align-items          : center;
+}
+
+/* #region HEADER LOGO */
+.header-logo-img {
+  height: 40px;
+  width : auto;
+}
+
+/* #endregion */
+
+/* #region HEADER MENU */
+.header-menu {
+  width    : 100%;
+  font-size: 14px;
+}
+
+.header-menu-ul {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.header-menu-ul-li {
+  color          : #F5F5F5;
+  text-decoration: underline;
+}
+
+/* #endregion */
+
+/* #region HEADER SOCIAL*/
+.header-social {
+  display        : flex;
+  justify-content: space-around;
+  column-gap     : 15px;
+}
+
+.header-social-a {
+  display: block;
+}
+
+.header-social-a-img {
+  height: 30px;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region MAIN */
+.clean-energy {
+  height    : 100vh;
+  background: url(/images/clean-energy.png);
+}
+
+/* #endregion */
