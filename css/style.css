@@ -71,7 +71,7 @@ body {
 /* #region MAIN */
 .clean-energy {
   height    : 100vh;
-  background: url(/images/clean-energy.png);
+  background: url("../images/clean-energy.png");
 }
 
 /* #endregion */
