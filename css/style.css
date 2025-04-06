@@ -52,7 +52,7 @@
 
 .header-container {
   min-height     : 90px;
-  padding        : 25px 40px;
+  padding        : 25px 32px;
   display        : flex;
   justify-content: space-between;
   align-items    : center;
