@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
+  padding   : 0;
+  margin    : 0;
+  border    : 0;
   box-sizing: border-box;
 }
 
@@ -15,8 +17,8 @@ ul,
 ol,
 li {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin    : 0;
+  padding   : 0;
 }
 
 img {
@@ -30,7 +32,7 @@ h4,
 h5,
 h6 {
   font-weight: inherit;
-  font-size: inherit;
+  font-size  : inherit;
 }
 
 html,
@@ -38,9 +40,17 @@ body {
   height: 100%;
 }
 
+body {
+  font-family        : "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight        : 600;
+  font-style         : normal;
+  color              : #F5F5F5;
+}
+
 button {
   background-color: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  color: inherit;
+  font-weight     : inherit;
+  font-size       : inherit;
+  color           : inherit;
 }
