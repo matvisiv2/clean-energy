@@ -8,9 +8,12 @@
 :root {
   --text-color-prime    : #F5F5F5;
   --text-color-secondary: #D4D4D4;
+  --text-color-third    : #000000;
 
   --text-color-hover: #14BE5A;
-  --btn-color-active: #14BE5A;
+
+  --btn-color-prime : #14BE5A;
+  --btn-color-active: #F5F5F5;
 }
 
 body {
@@ -99,6 +102,11 @@ body {
 
 @media (max-width: 989.98px) {
 
+  .header-logo {
+    z-index : 3;
+    position: absolute;
+  }
+
   .header-menu {
     font-size: 16px;
   }
@@ -179,7 +187,6 @@ body {
     right           : 0;
     background-color: #272727;
     padding-top     : 100px;
-    z-index         : -1;
     text-align      : center;
     top             : -200vh;
     bottom          : 100vh;
@@ -188,6 +195,10 @@ body {
   #burger-toggle:checked~.header-menu-ul {
     top   : 0;
     bottom: 0;
+  }
+
+  #burger-toggle:checked~.header-menu-label {
+    z-index: 1;
   }
 }
 
@@ -241,8 +252,8 @@ body {
 }
 
 .page-background-clean-energy {
-  position           : sticky;
-  z-index            : -2;
+  /* position           : sticky; */
+  /* z-index            : -2; */
   height             : 100vh;
   background         : url("../images/clean-energy.png");
   background-position: 70% 10%;
@@ -283,13 +294,28 @@ body {
 .page-content-btn {
   width           : 186px;
   height          : 52px;
-  border          : 1px solid;
+  border          : 2px solid white;
   border-radius   : 34px;
   background-color: transparent;
+  font-size       : 16px;
+  vertical-align  : bottom;
+  cursor          : pointer;
+}
+
+.page-content-btn-prime {
+  border          : none;
+  background-color: var(--btn-color-prime);
+  margin-right    : 16px;
 }
 
 .page-content-btn:hover {
-  background-color: --btn-color-active;
+  background-color: var(--btn-color-active);
+  color           : var(--text-color-third);
+}
+
+.page-content-btn-phone {
+  vertical-align: middle;
+  margin-right  : 10px;
 }
 
 /* #endregion */
