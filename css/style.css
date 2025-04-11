@@ -87,20 +87,46 @@ body {
 
 /* #region HEADER MENU */
 
+.header-menu-box {
+  width          : 100%;
+  display        : flex;
+  justify-content: space-between;
+}
+
 .header-menu {
-  font-size: 14px;
-  width    : 100%;
+  font-size      : 14px;
+  width          : 100%;
+  display        : flex;
+  justify-content: space-between;
 }
 
 /* #region HEADER MENU BURGER */
 
 #burger-toggle,
 .header-menu-label,
-.header-menu-ul {
+/* .header-menu-ul { */
+.header-menu {
   display: none;
 }
 
+.header-menu-ul {
+  display        : flex;
+  justify-content: center;
+  column-gap     : 28px;
+  flex           : 1 1 auto;
+}
+
 @media (max-width: 989.98px) {
+
+  .header-menu {
+    width: fit-content;
+  }
+
+  .header-menu-box {
+    display        : flex;
+    flex-direction : row;
+    justify-content: flex-end;
+  }
 
   .header-logo {
     z-index : 3;
@@ -178,21 +204,32 @@ body {
 }
 
 @media (max-width: 989.98px) {
-  .header-menu-ul {
+
+  .header-menu {
     display         : flex;
     flex-direction  : column;
+    justify-content : flex-start;
     row-gap         : 30px;
+    width           : 100%;
+    top             : -200vh;
+    bottom          : 100vh;
     position        : fixed;
     left            : 0;
     right           : 0;
     background-color: #272727;
-    padding-top     : 100px;
     text-align      : center;
-    top             : -200vh;
-    bottom          : 100vh;
+    padding-top     : 90px;
   }
 
-  #burger-toggle:checked~.header-menu-ul {
+  .header-menu-ul {
+    display        : flex;
+    justify-content: flex-start;
+    flex-direction : column;
+    row-gap        : 30px;
+    flex           : 0;
+  }
+
+  #burger-toggle:checked~.header-menu {
     top   : 0;
     bottom: 0;
   }
@@ -203,11 +240,15 @@ body {
 }
 
 @media (min-width: 989.98px) {
-  .header-menu-ul {
-    display   : flex;
-    flex-wrap : wrap;
-    column-gap: 23px;
-    row-gap   : 5px;
+
+  /* .header-menu-ul { */
+  .header-menu {
+    display        : flex;
+    justify-content: center;
+    flex           : 1 1 auto;
+    flex-wrap      : wrap;
+    column-gap     : 23px;
+    row-gap        : 5px;
   }
 }
 
@@ -215,22 +256,16 @@ body {
 
 /* #region HEADER SOCIAL*/
 
-.header-menu-ul-li-header-social {
-  display        : flex;
-  justify-content: flex-end;
-  flex           : 1 1 auto;
-}
-
-@media (max-width: 989.98px) {
-  .header-menu-ul-li-header-social {
-    justify-content: center;
-  }
-}
-
 .header-social {
   display        : flex;
   justify-content: space-around;
   column-gap     : 15px;
+}
+
+@media (max-width: 989.98px) {
+  .header-social {
+    justify-content: center;
+  }
 }
 
 .header-social-a {
@@ -257,6 +292,7 @@ body {
   height             : 100vh;
   background         : url("../images/clean-energy.png");
   background-position: 70% 10%;
+  background-repeat  : no-repeat;
 }
 
 .page-content {
