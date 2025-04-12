@@ -301,11 +301,11 @@ body {
   background-repeat  : no-repeat;
 }
 
-.welcome-content {
+.welcome-container {
   padding-top: 310px;
 }
 
-.welcome-content-title {
+.welcome-title {
   color         : var(--text-color-title-light);
   font-size     : 12px;
   font-weight   : bolder;
@@ -313,9 +313,8 @@ body {
   letter-spacing: 2px;
 }
 
-.welcome-content-clean-energy {
-  margin-top: 15px;
-
+.welcome-clean-energy {
+  margin-top   : 15px;
   color        : var(--text-color-title-light);
   line-height  : 95px;
   font-size    : 76px;
@@ -323,12 +322,13 @@ body {
   margin-bottom: 30px;
 }
 
-.welcome-content-embrace-renewable {
+.welcome-embrace-renewable {
+  font-size: 18px;
   font-weight  : 600;
   margin-bottom: 30px;
 }
 
-.welcome-content-btn {
+.welcome-btn {
   color           : var(--text-color-title-light);
   width           : 186px;
   height          : 52px;
@@ -341,20 +341,39 @@ body {
   cursor          : pointer;
 }
 
-.welcome-content-btn:hover {
+.welcome-btn:hover {
   background-color: var(--btn-color-active);
   color           : var(--text-color-title-dark);
 }
 
-.welcome-content-btn-prime {
+.welcome-btn-prime {
   border          : none;
   background-color: var(--btn-color-prime);
   margin-right    : 16px;
 }
 
-.welcome-content-btn-phone-span {
+.welcome-btn-phone-span {
   vertical-align: middle;
   margin-right  : 10px;
+}
+
+@media(max-width: 767.98px) {
+  .welcome-container {
+    padding-top: 210px;
+  }
+
+  .welcome-clean-energy {
+    font-size  : 54px;
+    line-height: 65px;
+  }
+
+  .welcome-clean-energy-br {
+    display: none;
+  }
+
+  .welcome-btn {
+    margin-bottom: 20px;
+  }
 }
 
 /* #endregion */
