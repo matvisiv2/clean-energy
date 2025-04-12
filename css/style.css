@@ -8,7 +8,7 @@
 :root {
   --text-color-prime    : #F5F5F5;
   --text-color-secondary: #D4D4D4;
-  --text-color-third    : #000000;
+  --text-color-third    : #272727;
 
   --text-color-hover: #14BE5A;
 
@@ -338,18 +338,18 @@ body {
   cursor          : pointer;
 }
 
+.page-content-btn:hover {
+  background-color: var(--btn-color-active);
+  color           : var(--text-color-third);
+}
+
 .page-content-btn-prime {
   border          : none;
   background-color: var(--btn-color-prime);
   margin-right    : 16px;
 }
 
-.page-content-btn:hover {
-  background-color: var(--btn-color-active);
-  color           : var(--text-color-third);
-}
-
-.page-content-btn-phone {
+.page-content-btn-phone-span {
   vertical-align: middle;
   margin-right  : 10px;
 }
