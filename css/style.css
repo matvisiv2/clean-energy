@@ -488,7 +488,7 @@ body {
 
 .what-we-offer-img {
   width              : 50vw;
-  background-image   : url("/../images/koala.png");
+  background-image   : url("./../images/koala.png");
   background-position: 30% 50%;
 }
 
