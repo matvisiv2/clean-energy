@@ -8,6 +8,8 @@
 /* #region GENERAL */
 
 :root {
+  --height-main: 880px;
+
   --text-color-prime      : #D4D4D4;
   --text-color-secondary  : #767676;
   --text-color-title-light: #F5F5F5;
@@ -28,6 +30,10 @@ html {
 body {
   color      : var(--text-color-prime);
   font-family: "Open Sans", sans-serif;
+}
+
+[class*="-topic"] {
+  font-family: "Mulish", sans-serif;
 }
 
 .wrapper {
@@ -299,7 +305,7 @@ body {
 /* #region WELCOME */
 
 .welcome {
-  height             : 880px;
+  height             : var(--height-main);
   background         : url("../images/clean-energy.png");
   background-position: 70% 10%;
   background-size    : cover;
@@ -307,30 +313,30 @@ body {
 }
 
 .welcome-container {
-  padding-top: 310px;
+  padding-top: 300px;
 }
 
 .welcome-title {
   color         : var(--text-color-title-light);
   font-size     : 12px;
-  font-weight   : bolder;
+  font-weight   : 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
-.welcome-clean-energy {
-  margin-top   : 15px;
+.welcome-clean-energy-topic {
+  margin-top   : 18px;
   color        : var(--text-color-title-light);
-  line-height  : 95px;
-  font-size    : 76px;
-  font-weight  : bold;
-  margin-bottom: 30px;
+  line-height  : 92px;
+  font-size    : 74px;
+  font-weight  : 800;
+  margin-bottom: 36px;
 }
 
 .welcome-embrace-renewable {
   font-size    : 18px;
   font-weight  : 600;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .welcome-btn {
@@ -390,13 +396,12 @@ body {
   font-size     : 12px;
   font-weight   : 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom : 20px;
 }
 
 .section-topic {
   color        : var(--text-color-title-dark);
-  font-family  : "Mulish", sans-serif;
   font-size    : 46px;
   font-weight  : 700;
   margin-bottom: 24px;
@@ -414,8 +419,9 @@ body {
 /* #region SERVICES */
 
 .services-container {
-  padding-top: 120px;
-  text-align : center;
+  padding-top   : 120px;
+  text-align    : center;
+  padding-bottom: 130px;
 }
 
 .services-grid {
@@ -431,8 +437,6 @@ body {
   }
 }
 
-.sevices-grid-cell {}
-
 .sevices-grid-cell-img {
   max-width     : 100%;
   padding-bottom: 16px;
@@ -444,9 +448,8 @@ body {
 
 .services-glid-cell-title {
   color         : var(--text-color-title-dark);
-  font-family   : "Mulish", sans-serif;
   font-size     : 24px;
-  font-weight   : bold;
+  font-weight   : 650;
   padding-bottom: 16px;
 }
 
@@ -472,6 +475,56 @@ body {
   text-decoration: underline;
 }
 
+
+/* #endregion */
+
+/* #region WHAT-WE-OFFER */
+
+.what-we-offer {
+  height         : var(--height-main);
+  display        : flex;
+  justify-content: space-between;
+}
+
+.what-we-offer-img {
+  width              : 50vw;
+  background-image   : url("/../images/koala.png");
+  background-position: 30% 50%;
+}
+
+.what-we-offer-content {
+  width          : 50vw;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  padding        : 72px;
+}
+
+.what-we-offer-description {
+  margin-bottom: 28px;
+}
+
+.what-we-offer-text {
+  color         : var(--text-color-description);
+  padding-bottom: 32px;
+}
+
+.what-we-offer-item {
+  display       : flex;
+  align-items   : center;
+  column-gap    : 14px;
+  padding-bottom: 32px;
+}
+
+.what-we-offer-item-text-topic {
+  color      : var(--text-color-title-dark);
+  font-size  : 24px;
+  font-weight: 650;
+}
+
+.what-we-offer-item-text-desription {
+  color: var(--text-color-description);
+}
 
 /* #endregion */
 
