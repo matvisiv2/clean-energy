@@ -287,11 +287,10 @@ body {
 }
 
 .page-background-clean-energy {
-  /* position           : sticky; */
-  /* z-index            : -2; */
   height             : 100vh;
   background         : url("../images/clean-energy.png");
   background-position: 70% 10%;
+  background-size: cover;
   background-repeat  : no-repeat;
 }
 
