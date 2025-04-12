@@ -109,7 +109,6 @@ body {
 
 #burger-toggle,
 .header-menu-label,
-/* .header-menu-ul { */
 .header-menu {
   display: none;
 }
@@ -200,7 +199,8 @@ body {
 }
 
 .header-menu-ul-li-a {
-  color          : #F5F5F5;
+  color          : var(--text-color-title-light);
+  font-weight    : 650;
   text-decoration: underline;
 }
 
@@ -294,7 +294,7 @@ body {
 /* #region WELCOME */
 
 .welcome {
-  height             : 100vh;
+  height             : 880px;
   background         : url("../images/clean-energy.png");
   background-position: 70% 10%;
   background-size    : cover;
@@ -302,7 +302,6 @@ body {
 }
 
 .welcome-content {
-  height     : 100vh;
   padding-top: 310px;
 }
 
@@ -319,7 +318,7 @@ body {
 
   color        : var(--text-color-title-light);
   line-height  : 95px;
-  font-size    : 74px;
+  font-size    : 76px;
   font-weight  : bold;
   margin-bottom: 30px;
 }
