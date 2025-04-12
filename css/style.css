@@ -286,20 +286,22 @@ body {
   flex: 1 1 auto;
 }
 
-.page-background-clean-energy {
+/* #region WELCOME */
+
+.welcome {
   height             : 100vh;
   background         : url("../images/clean-energy.png");
   background-position: 70% 10%;
-  background-size: cover;
+  background-size    : cover;
   background-repeat  : no-repeat;
 }
 
-.page-content {
+.welcome-content {
   height     : 100vh;
   padding-top: 310px;
 }
 
-.page-content-welcome {
+.welcome-content-welcome {
   font-size     : 12px;
   font-weight   : bolder;
   text-transform: uppercase;
@@ -313,7 +315,7 @@ body {
   /* чорна обводка з усіх боків */
 }
 
-.page-content-clean-energy {
+.welcome-content-clean-energy {
   margin-top: 15px;
 
   line-height  : 95px;
@@ -322,11 +324,11 @@ body {
   margin-bottom: 30px;
 }
 
-.page-content-embrace-renewable {
+.welcome-content-embrace-renewable {
   margin-bottom: 30px;
 }
 
-.page-content-btn {
+.welcome-content-btn {
   width           : 186px;
   height          : 52px;
   border          : 2px solid white;
@@ -337,20 +339,28 @@ body {
   cursor          : pointer;
 }
 
-.page-content-btn:hover {
+.welcome-content-btn:hover {
   background-color: var(--btn-color-active);
   color           : var(--text-color-third);
 }
 
-.page-content-btn-prime {
+.welcome-content-btn-prime {
   border          : none;
   background-color: var(--btn-color-prime);
   margin-right    : 16px;
 }
 
-.page-content-btn-phone-span {
+.welcome-content-btn-phone-span {
   vertical-align: middle;
   margin-right  : 10px;
 }
+
+/* #endregion */
+
+/* #region SERVICES */
+
+.services {}
+
+/* #endregion */
 
 /* #endregion */
