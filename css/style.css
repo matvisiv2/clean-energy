@@ -21,6 +21,8 @@
 
   --btn-color-prime : #14BE5A;
   --btn-color-active: #F5F5F5;
+
+  --bg-color-light: #F5F5F5;
 }
 
 html {
@@ -493,11 +495,15 @@ body {
 }
 
 .what-we-offer-content {
-  width          : 50vw;
-  display        : flex;
-  flex-direction : column;
-  justify-content: center;
-  padding        : 72px;
+  color      : var(--text-color-secondary);
+  font-weight: 500;
+
+  width           : 50vw;
+  background-color: var(--bg-color-light);
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  padding         : 72px;
 }
 
 .what-we-offer-description {
@@ -505,7 +511,6 @@ body {
 }
 
 .what-we-offer-text {
-  color         : var(--text-color-description);
   padding-bottom: 32px;
 }
 
@@ -522,9 +527,7 @@ body {
   font-weight: 650;
 }
 
-.what-we-offer-item-text-desription {
-  color: var(--text-color-description);
-}
+.what-we-offer-item-text-desription {}
 
 /* #endregion */
 
