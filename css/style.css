@@ -489,16 +489,15 @@ body {
 }
 
 .what-we-offer-img {
-  width              : 50vw;
-  background-image   : url("./../images/koala.png");
-  background-position: 30% 50%;
+  width     : 50%;
+  object-fit: cover;
 }
 
 .what-we-offer-content {
   color      : var(--text-color-secondary);
   font-weight: 500;
 
-  width           : 50vw;
+  width           : 50%;
   background-color: var(--bg-color-light);
   display         : flex;
   flex-direction  : column;
@@ -528,6 +527,21 @@ body {
 }
 
 .what-we-offer-item-text-desription {}
+
+@media(max-width: 767.98px) {
+  .what-we-offer {
+    height        : auto;
+    flex-direction: column;
+  }
+
+  .what-we-offer-img {
+    width: 100%;
+  }
+
+  .what-we-offer-content {
+    width: auto;
+  }
+}
 
 /* #endregion */
 
