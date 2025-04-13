@@ -80,7 +80,7 @@ body {
 
 @media (min-width: 989.98px) {
   .header {
-    background: rgba(0, 0, 0, 0.3);
+    background-color: rgba(39, 39, 39, 0.6);
   }
 }
 
