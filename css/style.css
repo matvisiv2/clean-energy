@@ -584,5 +584,34 @@ body {
 
 /* #endregion */
 
+/* #region NEWSLETTER */
+
+.newsletter {}
+
+.newsletter-container {
+  display: flex;
+}
+
+.newsletter-text {}
+
+.newsletter-text-title {}
+
+.section-title {}
+
+.newsletter-text-topic {}
+
+.newsletter-text-description {}
+
+.newsletter-text-subdescription {}
+
+.newsletter-form {}
+
+.newsletter-form-email {}
+
+.newsletter-form-submit {}
+
+
+/* #endregion */
+
 
 /* #endregion */
