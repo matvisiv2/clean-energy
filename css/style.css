@@ -556,14 +556,15 @@ body {
 }
 
 .advantages-container {
-  display    : flex;
-  height     : 100%;
-  align-items: center;
+  height         : 100%;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
 }
 
 .advantages-item {
   text-align: center;
-  padding   : 20px;
+  padding   : 20px 0 20px 0;
 }
 
 .advantages-item-topic {
@@ -610,8 +611,6 @@ body {
 
 .newsletter-form-submit {}
 
-
 /* #endregion */
-
 
 /* #endregion */
