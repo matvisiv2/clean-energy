@@ -57,6 +57,23 @@ body {
   padding  : 25px 32px;
 }
 
+[class*="-btn"] {
+  cursor          : pointer;
+  background-color: var(--btn-color-primary);
+  border          : none;
+  border-radius   : 34px;
+  color           : var(--text-color-title-light);
+  font-family     : "Open Sans", sans-serif;
+  font-size       : 16px;
+  font-weight     : 800;
+}
+
+[class*="-btn"]:hover {
+  background-color: var(--btn-color-active);
+  color           : var(--text-color-title-dark);
+  transition: 0.5s;
+}
+
 @media (max-width: 1279.98px) {
   [class*="-container"] {
     max-width: 1120px;
@@ -310,6 +327,8 @@ body {
   flex: 1 1 auto;
 }
 
+/* #endregion */
+
 /* #region WELCOME */
 
 .welcome {
@@ -348,21 +367,11 @@ body {
 }
 
 .welcome-btn {
-  color           : var(--text-color-title-light);
   width           : 186px;
   height          : 52px;
   border          : 2px solid white;
-  border-radius   : 34px;
   background-color: transparent;
-  font-size       : 16px;
-  font-weight     : 600;
   vertical-align  : bottom;
-  cursor          : pointer;
-}
-
-.welcome-btn:hover {
-  background-color: var(--btn-color-active);
-  color           : var(--text-color-title-dark);
 }
 
 .welcome-btn-primary {
@@ -371,7 +380,7 @@ body {
   margin-right    : 16px;
 }
 
-.welcome-btn-phone-span {
+.welcome-phone-span {
   vertical-align: middle;
   margin-right  : 10px;
 }
@@ -670,14 +679,12 @@ body {
   outline-color: #3b99fc;
 }
 
-.newsletter-form-submit {
+.newsletter-form-submit-btn {
   height          : 40px;
   border-radius   : 20px;
   background-color: var(--btn-color-primary);
   font-size       : 16px;
   font-weight     : 700;
 }
-
-/* #endregion */
 
 /* #endregion */
