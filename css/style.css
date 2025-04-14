@@ -11,6 +11,7 @@
   --height-main      : 880px;
   --height-advantages: 280px;
   --height-newsletter: 480px;
+  --height-about-us  : 844px;
 
   --text-color-white                    : #FFFFFF;
   --text-color-primary                  : #D4D4D4;
@@ -64,14 +65,16 @@ body {
   border-radius   : 34px;
   color           : var(--text-color-title-light);
   font-family     : "Open Sans", sans-serif;
-  font-size       : 16px;
-  font-weight     : 800;
+  font-size       : 17px;
+  font-weight     : 700;
+  width           : 154px;
+  height          : 52px;
 }
 
 [class*="-btn"]:hover {
   background-color: var(--btn-color-active);
   color           : var(--text-color-title-dark);
-  transition: 0.5s;
+  transition      : 0.5s;
 }
 
 @media (max-width: 1279.98px) {
@@ -352,18 +355,18 @@ body {
 }
 
 .welcome-clean-energy-topic {
-  margin-top   : 18px;
+  margin-top   : 19px;
   color        : var(--text-color-title-light);
-  line-height  : 92px;
+  line-height  : 89px;
   font-size    : 74px;
   font-weight  : 800;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .welcome-embrace-renewable {
   font-size    : 18px;
   font-weight  : 600;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .welcome-btn {
@@ -378,6 +381,10 @@ body {
   border          : none;
   background-color: var(--btn-color-primary);
   margin-right    : 16px;
+}
+
+.welcome-btn-secondary {
+  width: 194px;
 }
 
 .welcome-phone-span {
@@ -663,7 +670,7 @@ body {
 .newsletter-form-email {
   height          : 40px;
   border-radius   : 20px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   padding-left    : 20px;
   font-size       : 14px;
   font-weight     : 550;
@@ -681,10 +688,66 @@ body {
 
 .newsletter-form-submit-btn {
   height          : 40px;
+  width: 100%;
   border-radius   : 20px;
   background-color: var(--btn-color-primary);
   font-size       : 16px;
   font-weight     : 700;
+}
+
+/* #endregion */
+
+/* #region ABOUT-US */
+
+.about-us {
+  height         : var(--height-about-us);
+  display        : flex;
+  justify-content: space-between;
+}
+
+.about-us-img {
+  width     : 50%;
+  object-fit: cover;
+}
+
+.about-us-content {
+  color      : var(--text-color-secondary);
+  font-weight: 500;
+
+  width           : 50%;
+  background-color: var(--bg-color-light);
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  padding         : 72px;
+}
+
+.about-us-description {
+  margin-bottom: 28px;
+}
+
+.about-us-text {
+  padding-bottom: 32px;
+}
+
+.about-us-btn {
+  width : 150px;
+  height: ;
+}
+
+@media(max-width: 767.98px) {
+  .about-us {
+    height        : auto;
+    flex-direction: column;
+  }
+
+  .about-us-img {
+    width: 100%;
+  }
+
+  .about-us-content {
+    width: auto;
+  }
 }
 
 /* #endregion */
