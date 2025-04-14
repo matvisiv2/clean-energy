@@ -13,7 +13,7 @@
   --height-newsletter: 480px;
 
   --text-color-white                    : #FFFFFF;
-  --text-color-prime                    : #D4D4D4;
+  --text-color-primary                  : #D4D4D4;
   --text-color-secondary                : #767676;
   --text-color-advantages-decription    : #D4D4D4;
   --text-color-newsletter-subdescription: #f5f5f5a1;
@@ -24,8 +24,8 @@
 
   --text-color-hover: #14BE5A;
 
-  --btn-color-prime : #14BE5A;
-  --btn-color-active: #F5F5F5;
+  --btn-color-primary: #14BE5A;
+  --btn-color-active : #F5F5F5;
 
   --bg-color-light: #F5F5F5;
   --bg-color-dark : #272727;
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  color      : var(--text-color-prime);
+  color      : var(--text-color-primary);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -365,9 +365,9 @@ body {
   color           : var(--text-color-title-dark);
 }
 
-.welcome-btn-prime {
+.welcome-btn-primary {
   border          : none;
-  background-color: var(--btn-color-prime);
+  background-color: var(--btn-color-primary);
   margin-right    : 16px;
 }
 
@@ -631,7 +631,7 @@ body {
 }
 
 .newsletter-text-description {
-  color      : var(--text-color-prime);
+  color      : var(--text-color-primary);
   font-size  : 18px;
   font-weight: 600;
 }
@@ -662,7 +662,7 @@ body {
 }
 
 .newsletter-form-email::placeholder {
-  color      : var(--text-color-prime);
+  color      : var(--text-color-primary);
   font-weight: 500;
 }
 
@@ -673,7 +673,7 @@ body {
 .newsletter-form-submit {
   height          : 40px;
   border-radius   : 20px;
-  background-color: var(--btn-color-prime);
+  background-color: var(--btn-color-primary);
   font-size       : 16px;
   font-weight     : 700;
 }
