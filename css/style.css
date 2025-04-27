@@ -27,9 +27,9 @@
 
   --text-color-hover: #14BE5A;
 
-  --btn-color-primary: #14BE5A;
-  --btn-color-active : #F5F5F5;
-  --btn-color-active-dark : #464646;
+  --btn-color-primary    : #14BE5A;
+  --btn-color-active     : #F5F5F5;
+  --btn-color-active-dark: #464646;
 
   --bg-color-light: #F5F5F5;
   --bg-color-dark : #272727;
@@ -826,7 +826,7 @@ body {
 /* #region LATEST-NEWS */
 
 .latest-news {
-  height: var(--height-latest-news);
+  height : var(--height-latest-news);
   padding: 100px 0;
 }
 
@@ -841,9 +841,9 @@ body {
 }
 
 .latest-news-content {
-  display: grid;
+  display              : grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
+  column-gap           : 30px;
 }
 
 .latest-news-content-item {
@@ -851,28 +851,84 @@ body {
 }
 
 .latest-news-content-img {
-  width: 100%;
-  height: 262px;
-  border: 11px solid var(--bg-color-light);
+  width        : 100%;
+  height       : 262px;
+  border       : 11px solid var(--bg-color-light);
   margin-bottom: 20px;
 }
 
 .latest-news-content-topic {
-  font-weight: 700;
+  font-weight  : 700;
   margin-bottom: 20px;
 }
 
 .latest-news-content-text {
-  color: var(--text-color-secondary);
-  font-weight: 400;
-  line-height: 25px;
+  color        : var(--text-color-secondary);
+  font-weight  : 400;
+  line-height  : 25px;
   margin-bottom: 40px;
 }
 
 .latest-news-content-btn {}
 
-.latest-news-content-btn:hover {
-
-}
+.latest-news-content-btn:hover {}
 
 /* #endregion */
+
+/* #region MAP*/
+
+.map {
+  position: relative;
+  width   : 100%;
+  height  : 100vh;
+}
+
+.map-frame {
+  position: absolute;
+  width   : 100%;
+  height  : 100%;
+  filter  : invert(1) saturate(0);
+}
+
+.map-overlay {
+  position: absolute;
+  height  : 100%;
+  width   : 100%;
+  top     : 0;
+  left    : 0;
+}
+
+.map-container {
+  height     : 100%;
+  width      : 100%;
+  display    : flex;
+  align-items: center;
+}
+
+.map-form {
+  width           : 30%;
+  background-color: var(--bg-color-dark);
+  display         : flex;
+  flex-direction  : column;
+  row-gap         : 20px;
+  padding         : 40px 40px;
+}
+
+.map-form-name,
+.map-form-email,
+.map-form-message {
+  height          : 40px;
+  background-color: var(--btn-color-active-dark);
+  border-bottom   : 2px solid var(--bg-color-light);
+}
+
+.map-form-message {
+  height: 120px;
+
+  .map-form-btn-primary {
+    width : 100%;
+    height: 40px;
+  }
+
+
+  /* #endregion */
