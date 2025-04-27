@@ -24,6 +24,7 @@
   --text-color-title-dark               : #272727;
   --text-color-description              : #626262;
   --text-color-title-green              : #14BE5A;
+  --text-color-placeholder              : #D4D4D4;
 
   --text-color-hover: #14BE5A;
 
@@ -44,15 +45,19 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-[class*="-topic"] {
-  font-family: "Mulish", sans-serif;
-}
-
 .wrapper {
   min-height    : 100%;
   overflow      : hidden;
   display       : flex;
   flex-direction: column;
+}
+
+/* #endregion */
+
+/* #region CLASSES */
+
+[class*="-topic"] {
+  font-family: "Mulish", sans-serif;
 }
 
 [class*="-container"] {
@@ -84,6 +89,32 @@ body {
   background-color: var(--btn-color-active-dark);
   color           : var(--text-color-title-light);
   transition      : 0.5s;
+}
+
+[class*="-form-email"] {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-left    : 20px;
+  font-size       : 14px;
+  font-weight     : 550;
+  color           : var(--text-color-white);
+}
+
+[class*="-form-email"]::placeholder {
+  color      : var(--text-color-placeholder);
+  font-weight: 500;
+}
+
+[class*="-form-email"]:focus {
+  outline-color: #3b99fc;
+}
+
+[class*="-form-submit-btn"] {
+  height          : 40px;
+  width           : 100%;
+  border-radius   : 20px;
+  background-color: var(--btn-color-primary);
+  font-size       : 16px;
+  font-weight     : 700;
 }
 
 @media (max-width: 1279.98px) {
@@ -557,8 +588,6 @@ body {
   font-weight: 650;
 }
 
-.what-we-offer-item-text-desription {}
-
 @media(max-width: 767.98px) {
   .what-we-offer {
     height        : auto;
@@ -601,8 +630,6 @@ body {
   font-weight   : 750;
   padding-bottom: 28px;
 }
-
-.advantages-item-title {}
 
 .advantages-item-description {
   color      : var(--text-color-advantages-decription);
@@ -677,31 +704,8 @@ body {
 }
 
 .newsletter-form-email {
-  height          : 40px;
-  border-radius   : 20px;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding-left    : 20px;
-  font-size       : 14px;
-  font-weight     : 550;
-  color           : var(--text-color-white);
-}
-
-.newsletter-form-email::placeholder {
-  color      : var(--text-color-primary);
-  font-weight: 500;
-}
-
-.newsletter-form-email:focus {
-  outline-color: #3b99fc;
-}
-
-.newsletter-form-submit-btn {
-  height          : 40px;
-  width           : 100%;
-  border-radius   : 20px;
-  background-color: var(--btn-color-primary);
-  font-size       : 16px;
-  font-weight     : 700;
+  height       : 40px;
+  border-radius: 20px;
 }
 
 /* #endregion */
@@ -834,8 +838,6 @@ body {
   text-align: center;
 }
 
-.latest-news-topic {}
-
 .latest-news-decription {
   margin-bottom: 50px;
 }
@@ -868,10 +870,6 @@ body {
   line-height  : 25px;
   margin-bottom: 40px;
 }
-
-.latest-news-content-btn {}
-
-.latest-news-content-btn:hover {}
 
 /* #endregion */
 
@@ -910,25 +908,27 @@ body {
   background-color: var(--bg-color-dark);
   display         : flex;
   flex-direction  : column;
-  row-gap         : 20px;
-  padding         : 40px 40px;
+  row-gap         : 26px;
+  padding         : 54px 54px;
 }
 
 .map-form-name,
 .map-form-email,
 .map-form-message {
   height          : 40px;
-  background-color: var(--btn-color-active-dark);
   border-bottom   : 2px solid var(--bg-color-light);
 }
 
 .map-form-message {
   height: 120px;
+  margin-bottom: 42px;
+  padding-top: 8px;
+  resize: none;
+}
 
-  .map-form-btn-primary {
-    width : 100%;
-    height: 40px;
-  }
+.map-form-btn-primary {
+  width : 100%;
+  height: 40px;
+}
 
-
-  /* #endregion */
+/* #endregion */
