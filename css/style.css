@@ -29,6 +29,7 @@
 
   --btn-color-primary: #14BE5A;
   --btn-color-active : #F5F5F5;
+  --btn-color-active-dark : #464646;
 
   --bg-color-light: #F5F5F5;
   --bg-color-dark : #272727;
@@ -76,6 +77,12 @@ body {
 [class*="-btn"]:hover {
   background-color: var(--btn-color-active);
   color           : var(--text-color-title-dark);
+  transition      : 0.5s;
+}
+
+[class*="-btn-dark"]:hover {
+  background-color: var(--btn-color-active-dark);
+  color           : var(--text-color-title-light);
   transition      : 0.5s;
 }
 
@@ -863,5 +870,9 @@ body {
 }
 
 .latest-news-content-btn {}
+
+.latest-news-content-btn:hover {
+
+}
 
 /* #endregion */
