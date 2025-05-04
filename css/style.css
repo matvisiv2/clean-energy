@@ -18,6 +18,7 @@
   --text-color-white                    : #FFFFFF;
   --text-color-primary                  : #D4D4D4;
   --text-color-secondary                : #767676;
+  --text-color-secondary-2              : #8A8A8A;
   --text-color-advantages-decription    : #D4D4D4;
   --text-color-newsletter-subdescription: #f5f5f5a1;
   --text-color-title-light              : #F5F5F5;
@@ -938,43 +939,85 @@ body {
 .footer {
   background-color: var(--bg-color-dark);
   height          : 272px;
+  display         : flex;
+  align-items     : center;
 }
 
 .footer-container {
-  height         : 100%;
-  display        : flex;
-  justify-content: space-between;
-  align-items    : center;
+  display              : grid;
+  grid-template-columns: 2.3fr 2fr 1.2fr;
 }
 
 .footer-review {}
 
-.footer-review-img {
-  height: 40px;
+.footer-review-logo {
+  display      : block;
+  margin-bottom: 42px;
+}
+
+.footer-review-logo-img {
+  height: 50px;
   width : auto;
 }
 
-.footer-review-menu {}
+.footer-review-menu {
+  padding-right: 52px;
+}
 
-.footer-review-menu-ul {}
+.footer-review-menu-ul {
+  column-gap     : normal;
+  justify-content: space-between;
+}
 
 .footer-review-menu-ul-li {}
 
-.footer-review-menu-ul-li-a {}
+.footer-review-menu-ul-li-a {
+  color: var(--text-color-primary);
+}
 
-.footer-about {}
+.footer-about {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  font-size      : 14px;
+}
 
-.footer-about-text {}
+.footer-about-text {
+  color      : var(--text-color-secondary);
+  font-weight: 600;
+  line-height: 22px;
+}
 
-.footer-about-created-by {}
+.footer-about-created-by {
+  color      : var(--text-color-secondary-2);
+  font-weight: bold;
+}
 
-.footer-about-contacts {}
+.footer-about-contacts {
+  color      : var(--text-color-title-light);
+  font-size  : 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
 
-.footer-about-contacts-tel {}
+.footer-about-contacts-icon {
+  margin-right: 8px;
+}
 
-.footer-about-contacts-email {}
+.footer-about-contacts-tel {
+  display    : flex;
+  align-items: center;
+}
 
-.footer-about-contacts-address {}
+.footer-about-contacts-email {
+  display    : flex;
+  align-items: center;
+}
+
+.footer-about-contacts-address {
+  display    : flex;
+  align-items: center;
+}
 
 
 /* #endregion */
